@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vaddem. 👨‍💻</title>
+</head>
+<body>
+    <div class="cursor"></div>
+   
+    <div class="titles">
+        <h1>Hello there
+            <span class="wave">👋</span>
+        </h1>
+    </div>
+    <div class="boxes">
+        <h3 id="about">/about</h3>
+        <h3 id="contact">/contact</h3>
+        <h3 id="projects">/projects</h3>
+    </div>
+    <div id="header"> 
+        <h1>vaddem</h1><h1 class="dollar">$</h1><h1>:&nbsp</h1>
+        <div id="cursor">
+            
+        </div>
+    </div>
+    
+    <div class="hyperlinks">
+       <h3>Find me here:</h3>
+        <a href="https://github.com/siddharthvaddem" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/siddharthvaddem" target="_blank">linkedIn</a>
+        <a href="https://dev.to/siddharthvaddem" target="_blank">dev.to</a>
+            
+    </div>
+    
+    <div class="hidden">
+        <div id="about-content">
+          <h2>about-me:$<div id="cursor">
+            
+        </div></h2>
+          <p>My name is Siddharth Vaddem and I'm a creative fullstack web developer and tech enthusiast</p>
+          <p>Some of the tools that I am fluent in include JavaScript, React,C++,HTML & CSS,Github,MongoDB,Node.</p>
+          <p>Experienced in building scalable web applications and static sites with current trends</p>
+        </div>
+  
+        <div id="contact-content">
+          <h2>contact-me:$</h2>
+          <p>You can contact me at bizvaddem@gmail.com</p>
+         
+        </div>
+        <div id="projects-content">
+            <h2>projects:$</h2></h2>
+            <ul>
+                <li><a href="https://echoes-log.netlify.app/" target="_blank">Echoes(click me)</a> </li>
+                <li><a href="https://coursify-demo.netlify.app/" target="_blank">Coursify Edutech(click me)</a> </li>
+                <li><a href="#" target="_blank">Ecomm</a> </li>
+                <li><a href="#" target="_blank">AlgoHub</a> </li>
+            </ul>
+          </div>
+      </div>
+      <script>
+          const cursor=document.querySelector('.cursor');
+          document.addEventListener('mousemove',(e)=>{
+              cursor.style.left=e.pageX+'px';
+              cursor.style.top=e.pageY+'px';
+          })
+      </script>
+      
+    <script src="winbox.bundle.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

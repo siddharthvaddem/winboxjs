@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(248, 248, 248, 0.938);
+	background-color: black;
+}
+.hidden {
+	display: none;
+}
+.wb-body {
+	background: #000000;
+}
+
+.dollar {
+	color: lime;
+}
+
+.titles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boxes {
+	display: flex;
+	flex-direction: inherit;
+	justify-content: center;
+	font-size: small;
+}
+.boxes h3 {
+	padding: 8px;
+}
+.hyperlinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wave {
+	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.5s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+	display: inline-block;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0.0deg);
+	}
+	10% {
+		transform: rotate(14.0deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	20% {
+		transform: rotate(-8.0deg);
+	}
+	30% {
+		transform: rotate(14.0deg);
+	}
+	40% {
+		transform: rotate(-4.0deg);
+	}
+	50% {
+		transform: rotate(10.0deg);
+	}
+	60% {
+		transform: rotate(0.0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0.0deg);
+	}
+}
+
+#header {
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(248, 248, 248, 0.938);
+	font-size: 1.5rem;
+	padding: 0.2rem;
+}
+
+/* blinking cursor */
+#cursor {
+	background: orangered;
+	line-height: 17px;
+	height: 48px;
+	margin-left: 3px;
+	animation: blink 0.8s infinite;
+	width: 6px;
+}
+
+@keyframes blink {
+	0% {
+		background: #222;
+	}
+	50% {
+		background: orangered;
+	}
+	100% {
+		background: #222;
+	}
+}
+
+.wb-body::-webkit-scrollbar {
+	width: 12px;
+}
+.wb-body::-webkit-scrollbar-track {
+	background: transparent;
+}
+.wb-body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #4a576b;
+}
+.wb-body::-webkit-scrollbar-thumb:window-inactive {
+	background: #616161;
+}
+.wb-body::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.cursor {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ffff;
+	transition: 0.001s;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	mix-blend-mode: difference;
+	transform: scale(3);
+}
