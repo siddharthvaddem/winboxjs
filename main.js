@@ -37,25 +37,6 @@ contact.addEventListener('click', () => {
       bottom:20,
       mount:contactContent,
       onfocus: function () {
-        this.setBackground('#ff00ff')
-      },
-      onblur: function () {
-        this.setBackground('#777')
-    },
-  })
-})
-
-projects.addEventListener('click', () => {
-  const projectsBox = new WinBox({
-    title:'projects',
-      width:'80%',
-      height:'80%',
-      top:30,
-      left:10,
-      right:5,
-      bottom:20,
-      mount:projectsContent,
-      onfocus: function () {
         this.setBackground('limegreen')
       },
       onblur: function () {
@@ -63,7 +44,6 @@ projects.addEventListener('click', () => {
     },
   })
 })
-
 
 
 

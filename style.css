@@ -31,6 +31,7 @@ body {
 }
 .boxes h3 {
 	padding: 8px;
+	font-size: 1.2rem;
 }
 .hyperlinks {
 	display: flex;
@@ -98,6 +99,28 @@ a {
 	width: 6px;
 }
 
+.footer {
+	position: fixed;
+	left: 50;
+	bottom: 0;
+	width: 100%;
+
+	color: lime;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1rem;
+}
+.footer h1 {
+	font-size: 0.6rem;
+	padding-left: 50px;
+	padding-right: 50px;
+	background: rgba(248, 248, 248, 0.938);
+	color: #000000;
+}
+
 @keyframes blink {
 	0% {
 		background: #222;
@@ -126,6 +149,9 @@ a {
 .wb-body::-webkit-scrollbar-corner {
 	background: transparent;
 }
+.wb-body {
+	font-size: 1.5rem;
+}
 
 .cursor {
 	position: fixed;
@@ -133,9 +159,31 @@ a {
 	height: 20px;
 	border-radius: 50%;
 	background: #ffff;
-	transition: 0.001s;
+	transition: 0.1s;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	mix-blend-mode: difference;
-	transform: scale(3);
+	transform: scale(2.5);
+}
+
+@media only screen and (max-width: 600px) {
+	.titles h1 {
+		font-size: 2rem;
+	}
+	#header h1 {
+		font-size: 3rem;
+		padding-left: 5px;
+	}
+	.hyperlinks h3 {
+		font-size: 1.8rem;
+	}
+	a {
+		font-size: 1.5rem;
+	}
+	.cursor {
+		display: none;
+	}
+	.wb-body {
+		font-size: 0.8rem;
+	}
 }
